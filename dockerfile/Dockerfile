@@ -5,6 +5,10 @@ RUN pip install --upgrade pip \
     && rm -rf ~/.cache/pip
 
 RUN pip install flask
+RUN pip install joblib 
+RUN pip install pandas 
+RUN pip install numpy 
+RUN pip install -U scikit-learn
 
 # Add entrypoint (this allows variable expansion)
 COPY entrypoint.sh /entrypoint.sh
